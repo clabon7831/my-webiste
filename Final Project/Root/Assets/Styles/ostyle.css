@@ -1,0 +1,94 @@
+﻿fieldset {
+    background-color: transparent;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 46%;
+}
+
+legend {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+label {
+    clear: left;
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 4% 7px 5px;
+    width: 40%;
+}
+
+input {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+    width: 50%;
+}
+
+input[type="submit"] {
+    clear: left;
+}
+
+input[type="submit"], input[type=reset] {
+    height: 40px;
+    margin-right: 20px;
+    width: 200px;
+}
+
+table {
+    align-self center;
+
+}
+
+.menu-item-image {
+    width: 100px;
+    height: 105px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+}
+.menu-item-text {
+    flex-grow: 1;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+}
+
+button {
+    background-color: transparent;
+    border-radius: 2px;
+    border: solid 1px;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: inherit;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+
+.flex-parent {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+button.margin-right {
+    margin-right: 20px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: center;
+    height: 10px;
+    vertical-align: central;
+}

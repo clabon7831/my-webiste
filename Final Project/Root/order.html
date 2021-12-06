@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <!--
+
+
+    Comix Cafe Website
+        Author: Chris Labon
+        Date:   11/12/2021
+    Filename: index.htm
+    Supporting files: ComixCafeHeader.jpg, main.css
+
+    -->
+
+    <meta charset="utf-8" />
+
+    <title>Comix Cafe</title>
+
+    <link href="Assets/Styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="Assets/Styles/ostyle.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <nav class="horizontal">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="location.html">Location</a></li>
+            <li><a href="order.html">Place Order</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <img src="Assets/Images/ComixCafeHeader.jpg" alt="Comix Cafe" class="horizontal" />
+    </header><br>
+
+    <section id="main">
+
+        <h1>Order Online</h1>
+
+        <form name="interestForm" id="interestForm"
+              action="http://www.ComixCafeOnline.com/cgi-bin/interest"
+              method="post">
+
+            <fieldset id="contactFields">
+                <legend>Customer Information</legend>
+
+                <label for="fName">First Name</label>
+                <input type="text" id="fName" name="fName" required="required" />
+
+                <label for="lName">Last Name</label>
+                <input type="text" id="lName" name="lName" required="required" />
+
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required="required" />
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required="required" />
+
+                <label for="city">State</label>
+                <input type="text" id="state" name="state" required="required" value="Illinois" />
+
+                <label for="zip">Postal Code</label>
+                <input type="text" id="zip" name="zip" placeholder="nnnnn (-nnnn)"
+                       pattern="^\d{5}(\-\d{4})?$" />
+
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(nnn) nnn-nnnn"
+                       required="required"
+                       pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+
+            </fieldset>
+
+        </form><br><br>
+        <form name="order">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Quanity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td><img class="menu-item-image" src="Assets/Images/nystrip.jpg" alt="New York Strip" /></td>
+                    <td><input class="menu-item-text" type="checkbox" value="New York Strip"/>NY Strip</td>
+                    <td><input type="text" size="10"/></td>
+                    <td><input type="text" value="$25.99" readonly size="10"/></td>
+                    <td><input type="text" size="10" disabled/></td>
+                </tr>
+                <tr>
+                    <td><img class="menu-item-image" src="Assets/Images/burger.jpg" alt="Burger" /></td>
+                    <td><input class="menu-item-text" type="checkbox" value="Bacon Cheesburger"/>Bacon Cheesburger</td>
+                    <td><input type="text" size="10"/></td>
+                    <td><input type="text" value="$10.99" readonly size="10"/></td>
+                    <td><input type="text" size="10" disabled/></td>
+                </tr>
+                <tr>
+                    <td><img class="menu-item-image" src="Assets/Images/chickparm.jpg" alt="Chicken Parmesan Pasta" /></td>
+                    <td><input class="menu-item-text" type="checkbox" value="Chicken Parmesan Pasta"/>Chicken Parm</td>
+                    <td><input type="text" size="10"/></td>
+                    <td><input type="text" value="$15.99" readonly size="10"/></td>
+                    <td><input type="text" size="10" disabled/></td>
+                </tr>
+                <tr>
+                    <td><img class="menu-item-image" src="Assets/Images/chickfing.jpg" alt="Chicken Fingers" /></td>
+                    <td><input class="menu-item-text" type="checkbox" value="Chicken Fingers"/>Chicken Fingers</td>
+                    <td><input type="text" size="10"/></td>
+                    <td><input type="text" value="$12.99" readonly size="10"/></td>
+                    <td><input type="text" size="10" disabled/></td>
+                </tr>
+
+                <tr>
+
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Total</td>
+                    <td><input type="text" size="10" disabled/></td>
+
+                </tr>
+            </table><br>
+
+            <div class="flex-parent jc-center">
+                <button type="submit" class="green margin-right">Confirm</button>
+                <button type="submit" class="magenta">Cancel</button>
+            </div>
+
+        </form>
+
+
+    </section><br><br>
+
+    <footer>
+        <address>
+            Comix Cafe &183;
+            177A Bleeker St. &#183;
+            Metropolis, Il 62960 &#183;
+            (618) 616 - 2814 &#183;
+            Comix.Cafe@Geomail.com
+        </address>
+    </footer>
+
+</body>
+
+</html>

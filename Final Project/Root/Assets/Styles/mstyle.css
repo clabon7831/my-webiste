@@ -1,0 +1,63 @@
+﻿@charset "utf-8";
+
+/*
+    Comic Cafe Style Sheet
+
+    Author: Chris Labon
+    Date:   11/12/2021
+    Filename:  mstyle.css
+    Supporting Files
+
+*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5em;
+}
+
+.menu {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.menu-group-heading {
+    margin: 0;
+    padding-bottom: 1em;
+    border-bottom: 2px solid black;
+}
+
+.menu-group {
+    display: grid;
+    grid-template-columns: repeat(2, fr);
+    grid-gap: 1.5em;
+    padding: 1.5em 0;
+}
+
+.menu-item-heading {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.menu-item-name {
+    margin-right: 1.5em;
+}
+
+.menu-item {
+    display: flex;
+}
+.menu-item-image {
+    width: 120px;
+    height: 125px;
+    flex-shrink: 0;
+    object-fit: cover;
+    margin-right: 1.5em;
+}
+.menu-item-text {
+    flex-grow: 1;
+}
+
+.menu-item-description {
+    line-height: 1.6;
+}

@@ -1,0 +1,142 @@
+﻿@charset "utf-8";
+
+/*
+    Comic Cafe Style Sheet
+
+    Author: Chris Labon
+    Date:   11/12/2021
+    Filename:  main.css
+    Supporting Files
+
+*/
+
+article, aside, figure, figcaption, footer, hgroup, header, section, nav {
+    display:block;
+}
+
+html {
+    background-image: url(../Images/Background1.jpg);
+    background-size: cover;
+}
+
+body {
+    margin: 0px auto;
+    width: 800px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: 1.2em;
+    margin: 0px auto;
+    padding: 0px;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 5px;
+}
+
+nav li {
+    float: left;
+    width: 19%;
+    text-align: center;
+    border: 1px solid black;
+    margin: 5px 2px 15px 2px;
+}
+
+nav li a {
+    display: block;
+    color: rgb(68, 76, 169);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+nav li a:hover {
+    color: white;
+    background-color: rgb(68, 76, 169);
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: rgb(68, 76, 169);
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: rgb(68, 76, 169);
+    margin-top: 15px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: rgb(68, 76, 169);
+    margin-top: 15px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: rgb(68, 76, 169);
+    margin-top: 15px;
+}
+
+p {
+    margin: 7px;
+}
+
+#main {
+    border-top: 2px solid black;
+}
+
+    #main ul {
+        list-style-type: circle;
+        margin-left: 50px;
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+        #main ul li {
+            margin-bottom: 10px;
+        }
+
+ #main ul li strong {
+    font-weight: normal;
+    color: rgb(68, 76, 169);
+  }
+
+footer {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    clear: initial;
+    float: left;
+    width: 100%
+}
+
+address {
+    font-style: normal;
+    font-size: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* image styles */
+img.irregularWrap {
+    clear: right;
+    float: right;
+    margin: 0px auto;
+    width: 400px;
+    height: 325px;
+}
